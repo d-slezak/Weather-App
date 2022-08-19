@@ -1,0 +1,13 @@
+NavBar:
+Logo, 'Enter a City' Search,  Celsiuc/Farnheit toggle
+
+Main:
+Current city, weather, temp, high low
+24h forcast
+summary
+
+Subbar:
+    day stats: sunrise, sunset, chance of rain ......
+
+WeekForcast:
+    weather, chance of rain, humidity, temp:high/low
