@@ -1,3 +1,5 @@
+import { renderSearchBar } from "../components/searchbar";
+
 const renderNav = () => {
     const navBar = document.createElement('nav');
 
@@ -5,6 +7,7 @@ const renderNav = () => {
     header.textContent = 'What\'s The Weather'
 
     navBar.appendChild(header);
+    navBar.appendChild(renderSearchBar());
 
     return navBar;
 }
