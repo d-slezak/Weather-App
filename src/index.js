@@ -17,8 +17,8 @@ getWeatherByCityName(key, city).then(response => {
 
     const container = document.createElement('div');
     container.appendChild(renderNav());
-    container.appendChild(renderLocationInfo(city, hourlyWeather[0].dt))
-    container.appendChild(renderTodaysWeather(hourlyWeather, sunrise, sunset))
+    container.appendChild(renderLocationInfo(city, hourlyWeather[0].dt));
+    container.appendChild(renderTodaysWeather(hourlyWeather, sunrise, sunset));
 
     document.body.appendChild(container);
 });

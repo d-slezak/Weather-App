@@ -39,8 +39,6 @@ const renderHourlyWeather = (hourlyWeather, sunrise, sunset) => {
         card.appendChild(lowerCard);
 
         container.appendChild(card);
-
-        console.log(`TIME: ${time}, ${temp}'C, ${weather} , ${pop}% pop`);
     }
 
     return container
