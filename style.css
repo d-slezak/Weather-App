@@ -61,9 +61,16 @@ nav {
     gap: 10%;
 
     background-color: var(--Dark);
+    transform: scale(1);
+    box-shadow: 0 4px 10px var(--Black);
 }
 
-nav>h1 {
+nav>div {
+    display: flex;
+    align-items: center;
+}
+
+nav>div>h1 {
     font-size: 2rem;
     font-weight: bolder;
     text-shadow: 2px 2px var(--Black);
@@ -103,4 +110,59 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+.todays_weather {
+    display: flex;
+    background-color: var(--Light);
+    align-items: center;
+    padding: 3rem;
+}
+
+.locationInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 1rem 0rem 1rem;
+
+    background-color: var(--Light);
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.currentWeather {
+    background-color: var(--White);
+
+    margin: 2rem;
+    padding: 0rem 2rem;
+    height: fit-content;
+    width: 100%;
+
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px var(--Black);
+}
+
+.hourlyWeather {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    height: fit-content;
+
+    border-color: var(--Accent);
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px var(--Black);
+}
+
+.hourlyWeatherCard {
+    background-color: var(--White);
+
+    margin: 2rem;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px var(--Black);
 }
