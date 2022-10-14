@@ -7,6 +7,12 @@ const renderSearchBar = () => {
     const input = document.createElement('input');
     input.placeholder = 'Enter a City';
     input.id = 'search'
+    input.addEventListener("keypress", (e) => {
+        if (e.key === 'Enter' ) {
+            e.preventDefault();
+            setCity();
+        }
+    });
 
     const searchButton = document.createElement('button');
     searchButton.textContent = 'Search';

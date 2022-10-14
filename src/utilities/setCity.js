@@ -7,7 +7,6 @@ const key = 'a5ad458465c46d33c6696067d8f8a347';
 
 function setCity() {
    const input =  document.getElementById('search').value;
-   console.log(input);
 
    getWeatherByCityName(key, input).then(response => {
 

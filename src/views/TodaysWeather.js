@@ -8,7 +8,7 @@ const renderTodaysWeather = (hourlyWeather, sunrise, sunset ) => {
     container.classList.add('todays_weather');
     container.id = 'todaysWeather'
 
-    container.appendChild(renderCurrentWeather(hourlyWeather[0]));
+    container.appendChild(renderCurrentWeather(hourlyWeather[0], sunrise, sunset));
     container.appendChild(renderHourlyWeather(hourlyWeather, sunrise, sunset));
 
     return container;

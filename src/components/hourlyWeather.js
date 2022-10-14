@@ -21,6 +21,7 @@ const renderHourlyWeather = (hourlyWeather, sunrise, sunset) => {
 
         const weatherHeader = document.createElement('img');
         weatherHeader.src = getWeatherImg(weather, isDay(sunrise, sunset, hourlyWeather[i].dt));
+        weatherHeader.classList.add('weatherImg')
 
         const lowerCard = document.createElement('div');
         lowerCard.classList.add('lowerCard');
@@ -29,7 +30,7 @@ const renderHourlyWeather = (hourlyWeather, sunrise, sunset) => {
         tempHeader.textContent = temp + '°C';
 
         const popHeader = document.createElement('p');
-        popHeader.textContent = pop + ' POP';
+        popHeader.textContent = pop*100 + '% Chance of Rain';
 
         lowerCard.appendChild(tempHeader);
         lowerCard.appendChild(popHeader);
